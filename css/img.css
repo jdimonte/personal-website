@@ -1,7 +1,42 @@
-headshot {
-    border-radius: 50%;
+.container-animation {
+    position: relative;
 }
 
-title {
-    color: red;
+.image-animation {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-animation {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+}
+
+.container-animation:hover .overlay-animation {
+    opacity: .7;
+}
+
+.text-animation {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.img-second-animation:hover {
+    transform: scale(1.1);
 }
