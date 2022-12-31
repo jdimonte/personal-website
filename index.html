@@ -9,38 +9,16 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/img.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" />
 </head>
 
 <body>
-  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="https://jacquelinedimonte.com">
-        <strong>JD</strong>
-      </a>
-    </div>
-
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-end">
-        <div class="navbar-start">
-          <a class="navbar-item" href="#about">
-            About
-          </a>
-
-          <a class="navbar-item" href="#experience">
-            Experience
-          </a>
-
-          <a class="navbar-item" href="#projects">
-            Projects
-          </a>
-
-          <a class="navbar-item" href="#contact">
-            Contact
-          </a>
-        </div>
-      </div>
-    </div>
-  </nav>
   <section class="section">
     <div class="container">
       <div class="columns">
@@ -54,7 +32,7 @@
         </div>
       </div>
   </section>
-  <section class=" hero is-medium is-primary about">
+  <section class=" hero is-medium is-primary">
     <div class="hero-body">
       <div class="container">
         <div class="columns">
@@ -78,7 +56,7 @@
       </div>
     </div>
   </section>
-  <section class="section experience">
+  <section class="section my-experience">
     <div class="container">
       <div class="columns">
         <div class="column is-8-desktop is-offset-2-desktop">
@@ -106,7 +84,7 @@
         </div>
       </div>
   </section>
-  <section class="hero is-medium is-primary projects">
+  <section class="hero is-medium is-primary my-projects">
     <div class="hero-body">
       <div class="container">
         <div class="columns">
@@ -114,7 +92,7 @@
             <h1 class="title is-2 is-spaced">
               Recent Projects
             </h1>
-            <div class="columns">
+            <div class="columns slider">
               <div class="column">
                 <div class="container-animation">
                   <img class="image-animation" src="assets/proj1.png" width="250px" alt="">
@@ -127,49 +105,36 @@
                 <div class="container-animation">
                   <img class="image-animation" src="assets/proj2.png" width="250px" alt="">
                   <div class="overlay-animation">
-                    <div class="text-animation">Chat Bot</div>
+                    <div class="text-animation">
+                      <p>Chat Bot</p>
+                      <br>
+                      <a href="https://github.com/JasInCase/Metadating" target="_blank" style="padding: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                          class="bi bi-github img-second-animation" viewBox="0 0 16 16">
+                          <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class=" column">
-                <div class="container-animation">
-                  <img class="image-animation" src="assets/proj3.png" width="250px" alt="">
-                  <div class="overlay-animation">
-                    <div class="text-animation">Social Media App</div>
-                  </div>
-                </div>
-              </div>
-              <div class=" column">
-                <div class="container-animation">
-                  <img class="image-animation" src="assets/proj4.png" width="250px" alt="">
-                  <div class="overlay-animation">
-                    <div class="text-animation">Multiplayer Fishing Game</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class=" columns">
+
               <div class="column">
                 <div class="container-animation">
                   <img class="image-animation" src="assets/proj5.png" width="250px" alt="">
                   <div class="overlay-animation">
-                    <div class="text-animation">Web App</div>
-                  </div>
-                </div>
-              </div>
-              <div class=" column">
-                <div class="container-animation">
-                  <img class="image-animation" src="assets/proj6.png" width="250px" alt="">
-                  <div class="overlay-animation">
-                    <div class="text-animation">Web App</div>
-                  </div>
-                </div>
-              </div>
-              <div class=" column">
-                <div class="container-animation">
-                  <img class="image-animation" src="assets/proj7.png" width="250px" alt="">
-                  <div class="overlay-animation">
-                    <div class="text-animation">Web App</div>
+                    <div class="text-animation">
+                      <p>Web App</p>
+                      <br>
+                      <a href="https://github.com/bsteinig/bac_app" target="_blank" style="padding: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                          class="bi bi-github img-second-animation" viewBox="0 0 16 16">
+                          <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -177,7 +142,74 @@
                 <div class="container-animation">
                   <img class="image-animation" src="assets/proj8.png" width="250px" alt="">
                   <div class="overlay-animation">
-                    <div class="text-animation">Spotify API</div>
+                    <div class="text-animation">
+                      <p>Spotify API</p>
+                      <br>
+                      <a href="https://github.com/KaranArora1/Better-Spotify-Playlist-Maker" target="_blank"
+                        style="padding: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                          class="bi bi-github img-second-animation" viewBox="0 0 16 16">
+                          <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="columns slider">
+              <div class=" column">
+                <div class="container-animation">
+                  <img class="image-animation" src="assets/proj3.png" width="250px" alt="">
+                  <div class="overlay-animation">
+                    <div class="text-animation">
+                      <p>Social Media App</p>
+                      <br>
+                      <a href="https://github.com/jdimonte/IFeelThatWay" target="_blank" style="padding: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                          class="bi bi-github img-second-animation" viewBox="0 0 16 16">
+                          <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=" column">
+                <div class="container-animation">
+                  <img class="image-animation" src="assets/proj6.png" width="250px" alt="">
+                  <div class="overlay-animation">
+                    <div class="text-animation">
+                      <p>Web App</p>
+                      <br>
+                      <a href="https://github.com/bsteinig/healthy-habits-1" target="_blank" style="padding: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                          class="bi bi-github img-second-animation" viewBox="0 0 16 16">
+                          <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=" column">
+                <div class="container-animation">
+                  <img class="image-animation" src="assets/proj4.png" width="250px" alt="">
+                  <div class="overlay-animation">
+                    <div class="text-animation">
+                      <p>Multiplayer Fishing Game</p>
+                      <br>
+                      <a href="https://github.com/jdimonte/hooked-on-cssi" target="_blank" style="padding: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                          class="bi bi-github img-second-animation" viewBox="0 0 16 16">
+                          <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -187,7 +219,7 @@
       </div>
     </div>
   </section>
-  <section class=" section contact">
+  <section class=" section my-contact">
     <div class="container">
       <div class="columns">
         <div class="column is-8-desktop is-offset-2-desktop">
@@ -224,6 +256,64 @@
       </div>
   </section>
   <script type="text/javascript" src="lib/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $('.slider').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  </script>
+
+  <script>
+    jQuery($ => {
+      const speed = 1000;
+
+      $('a[href*="#"]')
+        .filter((i, a) => a.getAttribute('href').startsWith('#') || a.href.startsWith(`${location.href}#`))
+        .unbind('click.smoothScroll')
+        .bind('click.smoothScroll', event => {
+          const targetId = event.currentTarget.getAttribute('href').split('#')[1];
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+            event.preventDefault();
+            $('html, body').animate({ scrollTop: $(targetElement).offset().top }, speed);
+          }
+        });
+    });
+  </script>
 </body>
 
 </html>

@@ -1,11 +1,13 @@
 .container-animation {
     position: relative;
+    border-radius: 20%;
 }
 
 .image-animation {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 20%;
 }
 
 .overlay-animation {
@@ -19,10 +21,12 @@
     opacity: 0;
     transition: .5s ease;
     background-color: black;
+    border-radius: 20%;
 }
 
 .container-animation:hover .overlay-animation {
     opacity: .7;
+    border-radius: 20%;
 }
 
 .text-animation {
